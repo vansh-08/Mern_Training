@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyncAwait</title>
+    <script>
+// 1: 2s roll no;
+// 2: 2s name and age;
+
+// executor
+// promise produce
+const pobj1 = new Promise( (resolve, reject) => {
+    setTimeout( () => {
+        let roll_no = [1,2,3,4,5];
+        resolve(roll_no);
+        //reject('Error while communicating');
+    }, 2000);
+} );
+
+const getBiodata = (indexdata) => {
+    return new Promise( (resolve, reject) => {
+        setTimeout( (indexdata) => {
+            let biodata = {
+                name: 'Vansh',
+                age: 20
+            }
+            resolve(`My roll no is ${indexdata}. My name is ${biodata.name} and I am ${biodata.age} years old.`);
+        }, 2000, indexdata);
+    } );
+}
+
+// ..promise consume
+// pobj1.then(roll_no => {
+//     console.log(roll_no);
+//     return getBiodata(roll_no[1]);
+// } ).then( (kuchbhi) => {
+//     console.log(kuchbhi);
+// } ).catch( (error) => {
+//     console.log(error);
+// } )
+
+// .. async await
+// async function printData() {
+//     const rollNos = await pobj1;
+//     console.log(rollNos);
+//     const biodatas = await(getBiodata(rollNos[1]));
+//     console.log(biodatas);
+
+//     return biodatas ;
+// }
+
+// Error Handling using try catch in async await..
+async function printData() {
+    try {
+        const rollNos = await pobj1;
+        console.log(rollNos);
+        const biodatas = await(getBiodata(rollNos[1]));
+        console.log(biodatas);
+        return biodatas ;
+    } catch (error) {
+        console.log(`The Error: ${error}`);
+    }
+}
+
+const getName = printData().then( (name) => { 
+    console.log(name);
+} );
+
+
+
+</script>
+</head>
+<body bgcolor="gray">
+    <div><h1>Press F12</h1></div>
+</body>
+</html>

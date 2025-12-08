@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching API</title>
+    <script>
+    
+
+
+    function getMobileData(indexs, idName) {
+        // const apiKey = 'hxiZvehylje17oad9OIVoujO5QeDkEfZQZDdnVyj'; // Your key
+        // const apiEndpoint = 'https://api.nasa.gov/planetary/apod'; // Example: Astronomy Picture of the Day
+
+        // const requestUrl = `${apiEndpoint}?api_key=${apiKey}`;
+        
+        const requestUrl = 'http://localhost:3000/Supercar';
+
+        fetch(requestUrl)
+        .then( (apiData) => {
+            // console.log(apiData);   
+            return apiData.json();
+        } )
+        .then( (dataa) => {
+            // console.log(dataa);
+            const mydata = dataa[`${indexs - 1}`];
+            console.log(mydata);
+            document.getElementById(`${idName}`).innerHTML = JSON.stringify(mydata);
+        } )
+        .catch( (error) => {
+            console.log(`The Error: ${error}`);
+        } );
+    }
+
+    getMobileData(3, "demo");
+    getMobileData(7, "dem");    
+    getMobileData(5, "de");
+
+    </script>
+</head>
+<body bgcolor="gray">
+    <div id="demo">WELCOME</div> <br>   
+    <div id="dem">WELCOME</div> <br>
+    <div id="de">WELCOME</div> <br>
+</body>
+</html>

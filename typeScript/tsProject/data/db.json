@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "2c21",
+      "name": "Vansh",
+      "age": 20,
+      "gender": "Male",
+      "dob": "2005-03-30",
+      "hobbies": "reading, coding, walking, gym, cooking"
+    },
+    {
+      "id": "ea65",
+      "name": "Shivansh Vij",
+      "age": 23,
+      "gender": "Male",
+      "dob": "2002-10-15",
+      "hobbies": "walking, drinking water, gym"
+    },
+    {
+      "id": "4077",
+      "name": "Ashutosh Singh",
+      "age": 22,
+      "gender": "Male",
+      "dob": "2003-03-06",
+      "hobbies": "coding, gym"
+    },
+    {
+      "id": "e86a",
+      "name": "Harsh Sharma",
+      "age": 22,
+      "gender": "Male",
+      "dob": "2003-08-14",
+      "hobbies": "learning, walking"
+    },
+    {
+      "id": "d2a5",
+      "name": "Prakash Singh",
+      "age": 22,
+      "gender": "Male",
+      "dob": "2002-07-10",
+      "hobbies": "leetcode"
+    },
+    {
+      "id": "48a1",
+      "name": "Shilpa shimle wali",
+      "age": 23,
+      "gender": "Female",
+      "dob": "2003-06-10",
+      "hobbies": "singing"
+    }
+  ]
+}
