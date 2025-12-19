@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "age": 25
+  },
+  {
+    "id": "2",
+    "name": "happy",
+    "email": "happsingh@yahoo.com",
+    "age": 19,
+    "updatedAt": "2025-12-11T12:00:48.815Z"
+  },
+  {
+    "id": "3",
+    "name": "Bob Johnson",
+    "email": "bob@example.com",
+    "age": 28
+  },
+  {
+    "id": "4",
+    "name": "Einstein",
+    "email": "einstein@google.com",
+    "age": 1089,
+    "createdAt": "2025-12-10T13:03:37.904Z"
+  },
+  {
+    "id": "5",
+    "name": "vansh",
+    "email": "vansh@tx.com",
+    "age": 20,
+    "createdAt": "2025-12-12T07:07:51.338Z"
+  },
+  {
+    "id": "6",
+    "name": "Vansh Sharma",
+    "email": "vanshsharma@testing.com",
+    "password": "$2b$10$xLl5XXV4cflZlT5rrmmjy.jF2z1.sKpE72yjulH67jYI9zVESY4SK",
+    "createdAt": "2025-12-18T07:29:05.682Z"
+  },
+  {
+    "id": "7",
+    "name": "harsh sunami",
+    "email": "harshsharma@testing.com",
+    "password": "$2b$10$CMruAyrllsJ3JvDbOeWLHOEJfg30FNuqdPzP6K9p3G5DpFsEwmKfi",
+    "createdAt": "2025-12-18T07:41:55.517Z"
+  },
+  {
+    "id": "8",
+    "name": "Shiv",
+    "email": "ShivanshVij@testing.com",
+    "password": "$2b$10$uohdJv4aQILoFRc9ABnmc.Dnm/QcAp0w6s2pQXGc.fZnoriyCCfXC",
+    "createdAt": "2025-12-18T08:25:57.088Z"
+  }
+]
